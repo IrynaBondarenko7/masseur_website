@@ -1,14 +1,26 @@
 .btn {
   width: 143px;
   background: #f1ebe7;
-  border: 1px solid #dacec6;
-  font-size: 17px;
+  border: 1px solid#935116;
+  font-size: 3vw;
   line-height: 1.17;
   font-weight: 700;
-  color: #222222;
+  color: #935116;
   border-radius: 20px;
   padding: 10px;
   position: absolute;
-  bottom: 190px;
-  margin-left: 170px;
+  top: 350px;
+  margin-left: 5px;
+  z-index: 1;
+  //   bottom: 190px;
+  //   margin-left: 170px;
+  @include mobile {
+    font-size: 17px;
+    line-height: 1.17;
+  }
+
+  @include desktop {
+    bottom: 190px;
+    margin-left: 170px;
+  }
 }
