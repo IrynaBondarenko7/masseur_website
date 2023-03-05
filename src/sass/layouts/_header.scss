@@ -1,0 +1,36 @@
+.header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+.container {
+}
+.header-nav {
+  display: flex;
+  gap: 300px;
+  align-items: center;
+}
+.header-logo {
+  font-size: 17px;
+  line-height: 20px;
+}
+.logo-icon {
+  fill: #935116;
+}
+.header-nav-list {
+  display: flex;
+  gap: 45px;
+}
+.header-nav-item {
+}
+.header-nav-link {
+  font-size: 17px;
+  line-height: 1.17;
+  font-weight: 700;
+  color: #222222;
+}
+.header-nav-right {
+  color: #ffffff;
+}
