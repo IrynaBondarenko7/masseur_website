@@ -1,5 +1,5 @@
 .btn {
-  width: 143px;
+  width: 90px;
   background: #f1ebe7;
   border: 1px solid#935116;
   font-size: 3vw;
@@ -7,20 +7,24 @@
   font-weight: 700;
   color: #935116;
   border-radius: 20px;
-  padding: 10px;
-  position: absolute;
+  padding: 5px;
   top: 350px;
   margin-left: 5px;
   z-index: 1;
-  //   bottom: 190px;
-  //   margin-left: 170px;
+
   @include mobile {
     font-size: 17px;
     line-height: 1.17;
+    top: 500px;
+    width: 143px;
+    padding: 10px;
   }
-
+  @include tablet {
+    width: 150px;
+  }
   @include desktop {
-    bottom: 190px;
-    margin-left: 170px;
+    position: relative;
+    top: 243px;
+    left: 280px;
   }
 }

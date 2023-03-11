@@ -75,17 +75,21 @@
       <section class="hero">
         <div class="container">
           <div class="hero-content-wrap">
-            <h1 class="hero-title">
-              Відчуй красу свого <span class="title-text">тіла</span>
-            </h1>
+            <div class="text-wrap">
+              <h1 class="hero-title">
+                Відчуй красу свого<span class="title-text">тіла</span>
+              </h1>
+              <button type="submit" class="btn">Записатись</button>
+            </div>
+
             <picture>
               <source
                 srcset="./images/hero-img.jpg 1x"
-                media="(min-width:1340px)"
+                media="(min-width:1200px)"
               />
               <source
                 srcset="./images/hero-img-mob.jpg 1x"
-                media="(min-width:480px)"
+                media="(min-width:320px)"
               />
               <img
                 class="hero-img"
@@ -96,10 +100,9 @@
               />
             </picture>
           </div>
-          <button type="submit" class="btn">Записатись</button>
         </div>
       </section>
     </main>
-    <script src="./js/mob-menu.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>

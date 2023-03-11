@@ -12,10 +12,44 @@
   background-repeat: no-repeat;
   background-position: 1px 220px;
   background-size: 130px 130px;
-
+  @media screen and (min-width: 401px) and (max-width: 479px) {
+    background-position: 1px 300px;
+  }
+  @include mobile {
+    background-position: 1px 320px;
+    background-size: 170px 170px;
+  }
+  @include tablet {
+    background-position: 1px 520px;
+    background-size: 230px 230px;
+  }
   @include desktop {
-    background-position: 20px 200px;
-    background-size: 150px 150px;
+    background-position: 80px 220px;
+    background-size: 550px 550px;
+  }
+}
+.text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+  @include mobile {
+    gap: 200px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 28%;
+  }
+  @media screen and (min-width: 401px) and (max-width: 479px) {
+    gap: 250px;
+    width: 28%;
+  }
+  @include tablet {
+    width: 40%;
+    gap: 415px;
+  }
+  @include desktop {
+    gap: 5px;
+    width: 60%;
   }
 }
 .hero-title {
@@ -25,13 +59,26 @@
   line-height: 40px;
   padding-top: 90px;
   text-align: center;
-
+  @include mobile {
+    padding-top: 120px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  @media screen and (min-width: 401px) and (max-width: 479px) {
+    padding-top: 120px;
+  }
+  @include tablet {
+    font-size: 90px;
+    line-height: 1.1;
+    padding-top: 140px;
+  }
   @include desktop {
-    // padding-top: 250px;
-    // padding-left: 50px;
-    // font-weight: 400;
-    // font-size: 120px;
-    // line-height: 126px;
+    padding-top: 250px;
+    padding-left: 50px;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 126px;
+    text-align: left;
   }
 }
 .title-text {
@@ -39,23 +86,27 @@
   font-size: 10vw;
   line-height: 40px;
   margin-left: 10px;
-  // margin-left: 30px;
-  // font-family: 'Cormorant', serif;
-  // font-weight: 400;
-  // font-style: normal;
-  // font-size: 31vw;
-  // line-height: 40px;
-  // text-align: right;
+  margin-left: 30px;
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 40px;
+  text-align: right;
   color: #ffffff;
-  // top: 342px;
+
+  @include mobile {
+    font-size: 60px;
+    line-height: 50px;
+    margin-left: 22px;
+  }
+  @include tablet {
+    font-size: 90px;
+    line-height: 1.1;
+  }
   @include desktop {
     font-size: 100px;
     line-height: 182px;
+    font-size: 120px;
+    line-height: 126px;
   }
 }
-.hero-img {
-  // width: 500px;
-  // height: 400px;
-}
-// font-family: 'Cormorant', serif;
-// font-family: 'Inter', sans-serif;

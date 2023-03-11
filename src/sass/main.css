@@ -57,14 +57,14 @@ body {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1340px) {
+@media screen and (min-width: 1200px) {
   .container {
-    max-width: 1340px;
+    max-width: 1200px;
   }
 }
 
 .btn {
-  width: 143px;
+  width: 90px;
   background: #f1ebe7;
   border: 1px solid #935116;
   font-size: 3vw;
@@ -72,8 +72,7 @@ body {
   font-weight: 700;
   color: #935116;
   border-radius: 20px;
-  padding: 10px;
-  position: absolute;
+  padding: 5px;
   top: 350px;
   margin-left: 5px;
   z-index: 1;
@@ -82,12 +81,21 @@ body {
   .btn {
     font-size: 17px;
     line-height: 1.17;
+    top: 500px;
+    width: 143px;
+    padding: 10px;
   }
 }
-@media screen and (min-width: 1340px) {
+@media screen and (min-width: 768px) {
   .btn {
-    bottom: 190px;
-    margin-left: 170px;
+    width: 150px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn {
+    position: relative;
+    top: 243px;
+    left: 280px;
   }
 }
 
@@ -101,7 +109,6 @@ body {
 @media screen and (min-width: 480px) {
   .header {
     padding-top: 40px;
-    padding-bottom: 40px;
   }
 }
 
@@ -110,6 +117,11 @@ body {
   gap: 300px;
   align-items: center;
   display: none;
+}
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    display: flex;
+  }
 }
 
 .header-logo {
@@ -145,6 +157,11 @@ body {
   background-color: transparent;
   border-radius: 20px;
   border: 1px solid #935116;
+}
+@media screen and (min-width: 1200px) {
+  .menu-open {
+    display: none;
+  }
 }
 
 .menu-close {
@@ -188,10 +205,62 @@ body.menu-open {
   background-position: 1px 220px;
   background-size: 130px 130px;
 }
-@media screen and (min-width: 1340px) {
+@media screen and (min-width: 401px) and (max-width: 479px) {
   .hero-content-wrap {
-    background-position: 20px 200px;
-    background-size: 150px 150px;
+    background-position: 1px 300px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero-content-wrap {
+    background-position: 1px 320px;
+    background-size: 170px 170px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-content-wrap {
+    background-position: 1px 520px;
+    background-size: 230px 230px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-content-wrap {
+    background-position: 80px 220px;
+    background-size: 550px 550px;
+  }
+}
+
+.text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+}
+@media screen and (min-width: 480px) {
+  .text-wrap {
+    gap: 200px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .text-wrap {
+    width: 28%;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 479px) {
+  .text-wrap {
+    gap: 250px;
+    width: 28%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-wrap {
+    width: 40%;
+    gap: 415px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .text-wrap {
+    gap: 5px;
+    width: 60%;
   }
 }
 
@@ -203,16 +272,67 @@ body.menu-open {
   padding-top: 90px;
   text-align: center;
 }
+@media screen and (min-width: 480px) {
+  .hero-title {
+    padding-top: 120px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 479px) {
+  .hero-title {
+    padding-top: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 90px;
+    line-height: 1.1;
+    padding-top: 140px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    padding-top: 250px;
+    padding-left: 50px;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 126px;
+    text-align: left;
+  }
+}
+
 .title-text {
   position: absolute;
   font-size: 10vw;
   line-height: 40px;
   margin-left: 10px;
+  margin-left: 30px;
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 40px;
+  text-align: right;
   color: #ffffff;
 }
-@media screen and (min-width: 1340px) {
+@media screen and (min-width: 480px) {
+  .title-text {
+    font-size: 60px;
+    line-height: 50px;
+    margin-left: 22px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title-text {
+    font-size: 90px;
+    line-height: 1.1;
+  }
+}
+@media screen and (min-width: 1200px) {
   .title-text {
     font-size: 100px;
     line-height: 182px;
+    font-size: 120px;
+    line-height: 126px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -6,19 +6,20 @@
   width: 100%;
   @include mobile {
     padding-top: 40px;
-    padding-bottom: 40px;
   }
 }
 
 .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
-  // display: flex;
   gap: 300px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   display: none;
+  @include desktop {
+    display: flex;
+  }
 }
 .header-logo {
   font-size: 17px;
@@ -44,7 +45,6 @@
   color: #ffffff;
 }
 
-//mobile-menu
 .mobile-menu {
   position: absolute;
 }
@@ -52,12 +52,13 @@
   background-color: transparent;
   border-radius: 20px;
   border: 1px solid#935116;
+  @include desktop {
+    display: none;
+  }
 }
 .menu-close {
   background-color: transparent;
 }
-// width: 100vw;
-//   height: 100vh;
 
 .mobile-menu {
   width: 100vw;
