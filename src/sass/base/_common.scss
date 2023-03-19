@@ -1,6 +1,19 @@
 // font-family: 'Inter', sans-serif;
 // font-family: 'Shantell Sans', cursive;
 // font-family: 'Style Script', cursive;
+
+@font-face {
+  font-family: Cormorant;
+  src: url(../fonts/Cormorant-Italic.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
 body {
   font-family: 'Inter', sans-serif;
   color: #000000;

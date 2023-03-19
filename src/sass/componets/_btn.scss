@@ -8,23 +8,33 @@
   color: #935116;
   border-radius: 20px;
   padding: 5px;
-  top: 350px;
+
   margin-left: 5px;
   z-index: 1;
+  position: relative;
+  left: 40px;
+  // @media screen and (max-width: 320px) {
 
+  // }
+  @media screen and (min-width: 414px) and (max-width: 479px) {
+    left: 57px;
+  }
   @include mobile {
     font-size: 17px;
     line-height: 1.17;
-    top: 500px;
+    // top: 500px;
     width: 143px;
-    padding: 10px;
+    // padding: 10px;
   }
   @include tablet {
     width: 150px;
+    left: 55px;
   }
   @include desktop {
-    position: relative;
-    top: 243px;
-    left: 280px;
+    padding: 10px;
+    width: 250px;
+    // position: relative;
+    // top: 243px;
+    left: 90px;
   }
 }

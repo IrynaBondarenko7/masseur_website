@@ -3,7 +3,9 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
+  // @include small-mobile {
+  //   max-width: 320px;
+  // }
   @include mobile {
     max-width: 480px;
   }
