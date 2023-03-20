@@ -6,9 +6,9 @@
   background-position: 118px 0px;
   background-repeat: no-repeat;
 
-  @media screen and (min-width: 414px) and (max-width: 479px) {
-    background-position: 131px 0px;
-  }
+  // @media screen and (min-width: 414px) and (max-width: 479px) {
+  //   background-position: 131px 0px;
+  // }
   @include mobile {
     background-position: 180px 0px;
   }
@@ -22,18 +22,14 @@
     background-position: 486px 0px, -2px 220px;
     background-size: contain, 560px 560px;
   }
-  // padding-top: 50px;
-  // background-size: 738px 750px;
 }
 .hero-content-wrap {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  // display: flex;
   flex-direction: column;
   position: relative;
   z-index: 1;
-
   background-repeat: no-repeat;
   background-position: 1px 357px;
   background-size: 160px 160px;
@@ -41,10 +37,10 @@
     background-image: url(../images/woman.png);
   }
 
-  @media screen and (min-width: 414px) and (max-width: 479px) {
-    background-position: 0px 350px;
-    background-size: 190px 190px;
-  }
+  // @media screen and (min-width: 414px) and (max-width: 479px) {
+  //   background-position: 0px 350px;
+  //   background-size: 190px 190px;
+  // }
   @include mobile {
     background-position: 28px 360px;
     background-size: 220px 220px;
@@ -53,11 +49,6 @@
     background-position: 20px 435px;
     background-size: 280px 280px;
   }
-  // @include desktop {
-  //   background-position: 3px 220px;
-  //   background-size: 530px 530px;
-  //   z-index: 0;
-  // }
 }
 .text-wrap {
   display: flex;
@@ -65,20 +56,14 @@
   align-items: center;
   gap: 308px;
   padding-bottom: 100px;
-  // width: 30%;
+
   @include mobile {
     gap: 273px;
     padding-bottom: 58px;
   }
-  // @media screen and (max-width: 400px) {
-  //   width: 28%;
-  // }
-  // @media screen and (min-width: 401px) and (max-width: 479px) {
-  //   gap: 250px;
-  //   width: 28%;
-  // }
+
   @include tablet {
-    width: 40%;
+    // width: 40%;
     gap: 415px;
     align-items: start;
   }
@@ -91,32 +76,30 @@
   font-family: 'Cormorant', serif;
   font-weight: 400;
   font-size: 40px;
-  // font-size: 70px;
+
   line-height: 40px;
   padding-top: 168px;
-  text-align: center;
-  max-width: 96px;
+  text-align: left;
+  max-width: 280px;
   padding-right: 9px;
-  @media screen and (min-width: 414px) and (max-width: 479px) {
-    font-size: 45px;
-    max-width: 110px;
-    padding-right: 19px;
-  }
+  // @media screen and (min-width: 414px) and (max-width: 479px) {
+  //   font-size: 45px;
+  //   max-width: 110px;
+  //   padding-right: 19px;
+  // }
   @include mobile {
     padding-top: 214px;
     font-size: 50px;
     line-height: 1.1;
     padding-left: 38px;
-    max-width: 170px;
+    max-width: 400px;
   }
-  // @media screen and (min-width: 401px) and (max-width: 479px) {
-  //   padding-top: 120px;
-  // }
+
   @include tablet {
     font-size: 80px;
     line-height: 1.1;
     padding-top: 195px;
-    max-width: 230px;
+    max-width: 710px;
     padding-left: 85px;
   }
   @include desktop {
@@ -130,60 +113,60 @@
 }
 .title-first-text {
   margin-left: 13px;
-  @media screen and (min-width: 414px) and (max-width: 479px) {
-    margin-left: 17px;
-  }
+  // @media screen and (min-width: 414px) and (max-width: 479px) {
+  //   margin-left: 17px;
+  // }
   @include tablet {
-    margin-left: 35px;
+    margin-left: 44px;
   }
-  @include desktop {
-    margin-left: 30px;
-  }
+  // @include desktop {
+  //   margin-left: 30px;
+  // }
 }
 .title-second-text {
   color: #ffffff;
-  position: absolute;
-  margin-left: 61px;
-  top: 208px;
-  @media screen and (min-width: 414px) and (max-width: 479px) {
-    margin-left: 74px;
-  }
-  @include mobile {
-    margin-left: 15px;
-    top: 270px;
-  }
-  @include tablet {
-    margin-left: 153px;
-    top: 279px;
-  }
+  // position: absolute;
+  // margin-left: 61px;
+  // top: 208px;
+  // @media screen and (min-width: 414px) and (max-width: 479px) {
+  //   margin-left: 74px;
+  // }
+  // @include mobile {
+  //   margin-left: 15px;
+  //   top: 270px;
+  // }
+  // @include tablet {
+  //   margin-left: 153px;
+  //   top: 279px;
+  // }
   @include desktop {
     color: #222222;
-    position: static;
-    margin-left: 18px;
+    // position: static;
+    // margin-left: 18px;
   }
 }
 .title-text {
-  position: absolute;
+  // position: absolute;
 
-  line-height: 40px;
-  margin-left: 142px;
-  line-height: 40px;
-  text-align: right;
+  // line-height: 40px;
+  // margin-left: 142px;
+  // line-height: 40px;
+  // text-align: right;
   color: #ffffff;
-  top: 208px;
-  @media screen and (min-width: 414px) and (max-width: 479px) {
-    margin-left: 166px;
-  }
-  @include mobile {
-    margin-left: 120px;
-    top: 276px;
-  }
-  @include tablet {
-    margin-left: 313px;
-    top: 305px;
-  }
-  @include desktop {
-    margin-left: 450px;
-    top: 380px;
-  }
+  // top: 208px;
+  // @media screen and (min-width: 414px) and (max-width: 479px) {
+  //   margin-left: 166px;
+  // }
+  // @include mobile {
+  //   margin-left: 120px;
+  //   top: 276px;
+  // }
+  // @include tablet {
+  //   margin-left: 313px;
+  //   top: 305px;
+  // }
+  // @include desktop {
+  //   margin-left: 450px;
+  //   top: 380px;
+  // }
 }

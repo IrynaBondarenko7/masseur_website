@@ -12,13 +12,13 @@
   margin-left: 5px;
   z-index: 1;
   position: relative;
-  left: 40px;
+  left: -36px;
   // @media screen and (max-width: 320px) {
 
   // }
-  @media screen and (min-width: 414px) and (max-width: 479px) {
-    left: 57px;
-  }
+  // @media screen and (min-width: 414px) and (max-width: 479px) {
+  //   left: 57px;
+  // }
   @include mobile {
     font-size: 17px;
     line-height: 1.17;
