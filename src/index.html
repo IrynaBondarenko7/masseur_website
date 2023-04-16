@@ -76,11 +76,61 @@
                 ><span class="title-second-text">свого </span
                 ><span class="title-text">тіла</span>
               </h1>
-              <button type="submit" class="btn">Записатись</button>
+              <button
+                type="submit"
+                class="btn open-modal"
+                data-action="open-modal"
+              >
+                Записатись
+              </button>
             </div>
           </div>
         </div>
       </section>
+      <div class="modal-backdrop">
+        <div class="modal">
+          <button type="button" class="modal-close" data-action="close-modal">
+            <svg width="25" height="25" class="icon">
+              <symbol id="icon-cancel" viewBox="0 0 32 32">
+                <path
+                  d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z"
+                ></path>
+                <path
+                  d="M21 8l-5 5-5-5-3 3 5 5-5 5 3 3 5-5 5 5 3-3-5-5 5-5z"
+                ></path>
+              </symbol>
+              <use xlink:href="#icon-cancel"></use>
+            </svg>
+          </button>
+          <p class="modal-title">Залиште свої дані, я Вам перетелефоную!</p>
+          <form class="modal-form">
+            <label class="input-label"
+              ><span class="input-label-text">Ім'я</span
+              ><span class="input-wrap">
+                <input class="modal-input" type="text" name="user-name" /></span
+            ></label>
+            <label class="input-label"
+              ><span class="input-label-text">Телефон</span
+              ><span class="input-wrap">
+                <input
+                  class="modal-input"
+                  type="tel"
+                  name="user-number"
+                  placeholder="+380 99-111-2233" /></span
+            ></label>
+            <label for="user-comment" class="input-label"
+              ><span class="input-label-text">Коментар</span>
+              <textarea
+                name="user-comment"
+                id="user-comment"
+                class="label-comment-text"
+                placeholder="За необхідності залиште коментар"
+              ></textarea>
+            </label>
+            <button type="submit" class="modal-btn">Відправити</button>
+          </form>
+        </div>
+      </div>
     </main>
     <script src="./index.js" type="module"></script>
   </body>

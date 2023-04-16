@@ -1,0 +1,151 @@
+body.show-modal .modal-backdrop {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+body.show-modal .modal {
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color: rgba(147, 121, 113, 0.81);
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+}
+.modal-close {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border-color: transparent;
+  margin-left: auto;
+  margin-bottom: 10px;
+  svg {
+    fill: #935116;
+  }
+}
+.modal {
+  width: 270px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  border-radius: 10px;
+  padding: 20px;
+  transform: scale(1.1);
+  transition: transform 200ms ease-in-out;
+  @include mobile {
+    width: 370px;
+  }
+
+  @include tablet {
+    width: 470px;
+  }
+  @include desktop {
+    width: 570px;
+  }
+}
+
+.modal-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 20px;
+  @include mobile {
+    font-size: 14px;
+  }
+  @include tablet {
+    font-size: 16px;
+  }
+  @include desktop {
+    font-size: 18px;
+  }
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.input-label-text {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: block;
+  @include mobile {
+    font-size: 14px;
+  }
+  @include tablet {
+    font-size: 16px;
+  }
+  @include desktop {
+    font-size: 18px;
+  }
+}
+.modal-input,
+.label-comment-text {
+  width: 100%;
+  font-size: 12px;
+  padding: 5px 5px;
+  color: #212121;
+  border: 1px solid rgba(150, 93, 6, 0.2);
+  &:focus {
+    border-color: #935116;
+    outline: #935116;
+  }
+  @include mobile {
+    font-size: 14px;
+  }
+  @include tablet {
+    font-size: 16px;
+  }
+  @include desktop {
+    font-size: 18px;
+  }
+}
+
+.label-comment-text {
+  resize: none;
+  height: 100px;
+  padding: 10px 5px;
+}
+
+.modal-btn {
+  width: 90px;
+  background: #f1ebe7;
+  border: 1px solid#935116;
+  font-size: 12px;
+  line-height: 1.17;
+  font-weight: 700;
+  color: #935116;
+  border-radius: 20px;
+  padding: 5px;
+  display: block;
+  margin: 0 auto;
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 1.17;
+    width: 143px;
+  }
+  @include tablet {
+    width: 150px;
+    font-size: 16px;
+  }
+  @include desktop {
+    padding: 10px;
+    width: 250px;
+    font-size: 18px;
+  }
+}
