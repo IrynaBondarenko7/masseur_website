@@ -3,8 +3,6 @@ import { refs } from './refs';
 export const localStorageKeys = {
   KEY: 'form-state',
 };
-export let formData =
-  JSON.parse(localStorage.getItem(localStorageKeys.KEY)) || {};
 
 export function populateInputs() {
   const savedMessages = localStorage.getItem(localStorageKeys.KEY);

@@ -1,6 +1,9 @@
-import { formData, localStorageKeys, sendContactData } from './form';
+import { localStorageKeys, sendContactData } from './form';
 import { onCloseModal, onModalOpen } from './modal';
 import { refs } from './refs';
+
+export let formData =
+  JSON.parse(localStorage.getItem(localStorageKeys.KEY)) || {};
 
 export function onOpenModalBtnClick() {
   onModalOpen();
@@ -23,7 +26,7 @@ export function onFormSubmit(evt) {
 
   localStorage.removeItem(localStorageKeys.KEY);
 
-  // formData = {};
+  formData = {};
 
   onCloseModal();
 }
