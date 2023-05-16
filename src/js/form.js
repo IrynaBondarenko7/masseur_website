@@ -22,6 +22,7 @@ export function populateInputs() {
   }
 }
 
+//Sending contact data to an email address
 export function sendContactData() {
   const formState = {
     name: refs.nameInput.value,

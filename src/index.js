@@ -6,7 +6,7 @@ import {
   onOpenModalBtnClick,
 } from './js/handlers';
 import './js/mob-menu';
-import { onBackdropModalClick, onCloseModal } from './js/modal';
+import { onBackdropModalClick } from './js/modal';
 import { refs } from './js/refs';
 import { populateInputs } from './js/form';
 
