@@ -23,7 +23,7 @@ export function onFormSubmit(evt) {
 
   localStorage.removeItem(localStorageKeys.KEY);
 
-  formData = {};
+  // formData = {};
 
   onCloseModal();
 }

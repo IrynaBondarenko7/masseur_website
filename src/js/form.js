@@ -1,6 +1,5 @@
 import { refs } from './refs';
 
-// export const STORAGE_KEY = 'form-state';
 export const localStorageKeys = {
   KEY: 'form-state',
 };
