@@ -1,4 +1,4 @@
-import { STORAGE_KEY, formData, sendContactData } from './form';
+import { formData, localStorageKeys, sendContactData } from './form';
 import { onCloseModal, onModalOpen } from './modal';
 import { refs } from './refs';
 
@@ -21,7 +21,7 @@ export function onFormSubmit(evt) {
 
   evt.currentTarget.reset();
 
-  localStorage.removeItem(STORAGE_KEY);
+  localStorage.removeItem(localStorageKeys.KEY);
 
   formData = {};
 
@@ -31,5 +31,5 @@ export function onFormSubmit(evt) {
 export function onFormInput(evt) {
   formData[evt.target.name] = evt.target.value;
 
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
+  localStorage.setItem(localStorageKeys.KEY, JSON.stringify(formData));
 }

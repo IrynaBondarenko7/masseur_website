@@ -1,11 +1,14 @@
 import { refs } from './refs';
 
-export const STORAGE_KEY = 'form-state';
-
-export let formData = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+// export const STORAGE_KEY = 'form-state';
+export const localStorageKeys = {
+  KEY: 'form-state',
+};
+export let formData =
+  JSON.parse(localStorage.getItem(localStorageKeys.KEY)) || {};
 
 export function populateInputs() {
-  const savedMessages = localStorage.getItem(STORAGE_KEY);
+  const savedMessages = localStorage.getItem(localStorageKeys.KEY);
 
   if (savedMessages) {
     const parsedData = JSON.parse(savedMessages);
