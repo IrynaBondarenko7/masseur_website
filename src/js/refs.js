@@ -6,4 +6,9 @@ export const refs = {
   nameInput: document.querySelector('#name-input'),
   telInput: document.querySelector('#tel-input'),
   textInput: document.querySelector('#user-comment'),
+  openMenuBtn: document.querySelector('[data-menu-open]'),
+  closeMenuBtn: document.querySelector('[data-menu-close]'),
+  menu: document.querySelector('[data-menu]'),
+  body: document.querySelector('body'),
+  menuList: document.querySelector('.menu-list'),
 };
