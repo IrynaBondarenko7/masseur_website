@@ -1,11 +1,31 @@
 .about-title {
   justify-content: end;
 }
+.about-content-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  @include desktop {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
 .about-description {
-  width: 350px;
   text-align: center;
   display: block;
   margin: 0 auto;
+  font-size: 3vw;
+  @include mobile {
+    width: 350px;
+    font-size: 18px;
+  }
+  @include tablet {
+    font-size: 20px;
+    width: 450px;
+  }
+  @include desktop {
+    font-size: 25px;
+  }
 }
 .about-img {
   margin: 0 auto;

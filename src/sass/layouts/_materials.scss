@@ -1,0 +1,73 @@
+.materials-section {
+  background-color: #fbeee6;
+}
+.materials-wrapp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include desktop {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+}
+.picture-wrapp {
+  position: relative;
+  padding-bottom: 380px;
+  width: 300px;
+  margin: 0 auto;
+  @include tablet {
+    width: 738px;
+    padding-bottom: 800px;
+  }
+
+  @include desktop {
+    width: 1100px;
+  }
+}
+.material-img {
+  width: 150px;
+  position: absolute;
+  @include tablet {
+    width: 350px;
+  }
+}
+
+.m-first-img {
+  top: 10%;
+  left: 16%;
+  z-index: 1;
+  @include mobile {
+    left: 35%;
+  }
+  @include tablet {
+    left: 30%;
+  }
+}
+.m-second-img {
+  top: 20%;
+  left: 45%;
+  z-index: 2;
+  @include mobile {
+    top: 20%;
+    left: 57%;
+  }
+  @include tablet {
+    top: 25%;
+    left: 52%;
+  }
+}
+.m-third-img {
+  top: 38%;
+  left: 25%;
+  z-index: 3;
+}
+.m-fourth-img {
+  top: 30%;
+  left: 3%;
+  z-index: 4;
+
+  @include tablet {
+    left: 2%;
+  }
+}

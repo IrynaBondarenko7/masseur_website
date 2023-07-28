@@ -27,10 +27,10 @@
           </a>
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a href="" class="header-nav-link">Про мене</a>
+              <a href="#about" class="header-nav-link">Про мене</a>
             </li>
             <li class="header-nav-item">
-              <a href="" class="header-nav-link">Матеріали</a>
+              <a href="#materials" class="header-nav-link">Матеріали</a>
             </li>
             <li class="header-nav-item">
               <a href="" class="header-nav-link header-nav-right">Процедури</a>
@@ -56,8 +56,8 @@
           <nav class="mob-nav">
             <a class="mob-home-link" href="./index.html">Головна</a>
             <ul class="menu-list">
-              <li class="menu-list-item"><a href="#">Про мене</a></li>
-              <li class="menu-list-item"><a href="#">Матеріали</a></li>
+              <li class="menu-list-item"><a href="#about">Про мене</a></li>
+              <li class="menu-list-item"><a href="#materials">Матеріали</a></li>
               <li class="menu-list-item"><a href="#">Процедури</a></li>
               <li class="menu-list-item"><a href="#">Контакти</a></li>
             </ul>
@@ -88,22 +88,132 @@
         </div>
       </section>
       <!------------------------ About--------------------------->
-      <section>
+      <section id="about">
         <div class="container">
           <h2 class="section-title about-title">Про мене</h2>
-          <p class="about-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            fugit, ipsam facere, unde rem illum recusandae omnis inventore quas
-            et qui consequatur neque architecto, quia aliquid ut impedit.
-            Voluptatibus, animi.
-          </p>
-          <img
-            src="./images/about.jpg"
-            alt="masseur"
-            width="300"
-            height="300"
-            class="about-img"
-          />
+          <div class="about-content-wrap">
+            <p class="about-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium fugit, ipsam facere, unde rem illum recusandae omnis
+              inventore quas et qui consequatur neque architecto, quia aliquid
+              ut impedit. Voluptatibus, animi.
+            </p>
+            <picture>
+              <source
+                srcset="./images/about/about_img_desk.jpg 1x"
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="./images/about/about_img_tab.jpg 1x"
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="./images/about/about_img_mob.jpg 1x"
+                media="(min-width:320px)"
+              />
+              <img
+                src="./images/about/about_img_mob.jpg"
+                alt="masseur"
+                width="800"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <!------------------------ Materials--------------------------->
+      <section class="materials-section" id="materials">
+        <div class="container">
+          <h2 class="section-title matetials-title">Матеріали</h2>
+          <div class="materials-wrapp">
+            <p class="about-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium fugit, ipsam facere, unde rem illum recusandae omnis
+              inventore quas et qui consequatur neque architecto, quia aliquid
+              ut impedit. Voluptatibus, animi.
+            </p>
+            <div class="picture-wrapp">
+              <picture>
+                <source
+                  srcset="./images/materials/meterial-1-desk.jpg 1x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/materials/meterial-1-tab.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/materials/meterial-1-mob.jpg 1x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="material-img m-first-img"
+                  src="./images/materials/meterial-1-mob.jpg"
+                  alt="masseur"
+                  width="450"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="./images/materials/meterial-2-desk.jpg 1x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/materials/meterial-2-tab.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/materials/meterial-2-mob.jpg 1x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="material-img m-second-img"
+                  src="./images/materials/meterial-2-mob.jpg"
+                  alt="masseur"
+                  width="450"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="./images/materials/meterial-3-desk.jpg 1x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/materials/meterial-3-tab.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/materials/meterial-3-mob.jpg 1x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="material-img m-third-img"
+                  src="./images/materials/meterial-3-mob.jpg"
+                  alt="masseur"
+                  width="450"
+                />
+              </picture>
+              <picture>
+                <source
+                  srcset="./images/materials/meterial-4-desk.jpg 1x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/materials/meterial-4-tab.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/materials/meterial-4-mob.jpg 1x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="material-img m-fourth-img"
+                  src="./images/materials/meterial-4-mob.jpg"
+                  alt="masseur"
+                  width="450"
+                />
+              </picture>
+            </div>
+          </div>
         </div>
       </section>
       <div class="modal-backdrop">
