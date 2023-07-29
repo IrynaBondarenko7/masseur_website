@@ -1,0 +1,32 @@
+.procedures-section {
+  padding-bottom: 30px;
+}
+.procedures-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include desktop {
+    flex-direction: row;
+  }
+}
+.procedures-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.procedure-descrip-wrap {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #fff;
+}
+.procedure-description {
+  color: #fff;
+  padding: 90px 30px;
+  width: 315px;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+}
