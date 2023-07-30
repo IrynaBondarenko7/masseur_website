@@ -20,15 +20,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid #fff;
+  border: 1px solid var(--white);
 }
 .procedure-description {
-  color: #fff;
-  padding: 90px 30px;
-  width: 315px;
+  color: var(--white);
+  padding: 65px 8px;
+  width: 250px;
   text-align: center;
   font-weight: 500;
   text-transform: uppercase;
+  @include mobile {
+    width: 315px;
+    padding: 90px 30px;
+  }
 }
 .procedure-full-description {
   position: absolute;
@@ -36,7 +40,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 320px;
-  background-color: #fff;
-  padding: 40px 15px;
+  width: 280px;
+  background-color: var(--white);
+  padding: 20px 15px;
+  font-size: 14px;
+  @include mobile {
+    width: 320px;
+    padding: 40px 15px;
+    font-size: 16px;
+  }
 }

@@ -24,4 +24,5 @@ export const refs = {
   detailBtnFifst: document.querySelector('#detail-btn-1'),
   detailBtnSecond: document.querySelector('#detail-btn-2'),
   detailBtnThird: document.querySelector('#detail-btn-3'),
+  btnUp: document.querySelector('.btn-up'),
 };

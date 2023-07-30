@@ -51,10 +51,12 @@
               <a href="#materials" class="header-nav-link">Матеріали</a>
             </li>
             <li class="header-nav-item">
-              <a href="" class="header-nav-link header-nav-right">Процедури</a>
+              <a href="#procedures" class="header-nav-link header-nav-right"
+                >Процедури</a
+              >
             </li>
             <li class="header-nav-item">
-              <a href="" class="header-nav-link header-nav-right">Контакти</a>
+              <a href="#address" class="header-nav-link header-nav-right">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -76,8 +78,10 @@
             <ul class="menu-list">
               <li class="menu-list-item"><a href="#about">Про мене</a></li>
               <li class="menu-list-item"><a href="#materials">Матеріали</a></li>
-              <li class="menu-list-item"><a href="#">Процедури</a></li>
-              <li class="menu-list-item"><a href="#">Контакти</a></li>
+              <li class="menu-list-item">
+                <a href="#procedures">Процедури</a>
+              </li>
+              <li class="menu-list-item"><a href="#address">Контакти</a></li>
             </ul>
           </nav>
         </div>
@@ -106,7 +110,7 @@
         </div>
       </section>
       <!------------------------ About--------------------------->
-      <section id="about">
+      <section class="about-section" id="about">
         <div class="container">
           <h2 class="section-title reverce-section-title">Про мене</h2>
           <div class="about-content-wrap">
@@ -235,7 +239,7 @@
         </div>
       </section>
       <!------------------------ Procedures--------------------------->
-      <section class="procedures-section">
+      <section class="procedures-section" id="procedures">
         <div class="container">
           <h2 class="section-title reverce-section-title">Процедури</h2>
           <ul class="procedures-list">
@@ -400,7 +404,37 @@
           </form>
         </div>
       </div>
+      <button type="button" class="btn-up"><svg class="logo-icon" width="44" height="44">
+              <use href="./images/sprite.svg#icon-circle-up"></use>
+            </svg></button>
     </main>
+    <!------------------------ FOOOTER --------------------------->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-info-wrap">
+          <a href="./index.html" class="footer-logo">
+            <svg class="logo-icon" width="44" height="44">
+              <use href="./images/sprite.svg#icon-logo"></use>
+            </svg>
+            <address class="address" id="address">
+              <a href="https://goo.gl/maps/583VCimZShtoVaUW6" class="address-link">
+                <svg class="logo-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-location"></use>
+            </svg>Теремки, ЖК Республіка</a>
+            </address>
+            <p class="footer-text">Швидкий запис <a href="https://instagram.com/massage_kateryna?igshid=MzRlODBiNWFlZA=="><svg class="logo-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg></a></p>
+        </div>
+        
+        <p class="creator-text">
+          Created by
+          <a href="https://github.com/IrynaBondarenko7" class="creator-link"
+            >Iryna_bd</a
+          >
+        </p>
+      </div>
+    </footer>
     <script src="./index.js" type="module"></script>
   </body>
 </html>

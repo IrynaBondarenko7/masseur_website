@@ -1,5 +1,6 @@
 @import './base/reset';
 @import './utils/mixin';
+@import './utils/vars';
 @import './base/common';
 
 @import './componets/container';
@@ -12,3 +13,4 @@
 @import './layouts/about';
 @import './layouts/materials';
 @import './layouts/procedures';
+@import './layouts/footer';

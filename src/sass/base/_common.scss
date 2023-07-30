@@ -16,7 +16,7 @@
 }
 body {
   font-family: 'Inter', sans-serif;
-  color: #000000;
+  color: var(--text-color);
 }
 .is-hidden {
   opacity: 0;

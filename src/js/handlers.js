@@ -1,3 +1,4 @@
+import Notiflix from 'notiflix';
 import { localStorageKeys, sendContactData } from './form';
 import { onCloseModal, onModalOpen } from './modal';
 import { isShowProcedureDescription } from './procedures';
@@ -17,7 +18,7 @@ export function onFormSubmit(evt) {
   evt.preventDefault();
 
   if (refs.nameInput.value === '' || refs.telInput.value === '') {
-    return alert('Заповніть всі поля!');
+    return Notiflix.Notify.failure('Заповніть всі поля!');
   }
 
   //Sending contact data to an email address

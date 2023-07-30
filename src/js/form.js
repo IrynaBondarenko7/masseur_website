@@ -1,3 +1,4 @@
+import Notiflix from 'notiflix';
 import { refs } from './refs';
 
 export const localStorageKeys = {
@@ -38,13 +39,12 @@ export function sendContactData() {
   })
     .then(response => {
       if (response.ok) {
-        alert('Дякуємо за ваше повідомлення!');
+        Notiflix.Notify.success('Дякуємо за ваше повідомлення!');
       } else {
-        alert('Сталася помилка. Спробуйте ще раз.');
+        Notiflix.Notify.warning('Сталася помилка. Спробуйте ще раз.');
       }
     })
     .catch(error => {
-      alert('Сталася помилка. Спробуйте ще раз.');
-      console.error(error);
+      Notiflix.Notify.warning('Сталася помилка. Спробуйте ще раз.');
     });
 }

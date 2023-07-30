@@ -16,7 +16,7 @@ body.show-modal .modal {
   top: 0;
   left: 0;
   z-index: 20;
-  background-color: rgba(147, 121, 113, 0.81);
+  background-color: var(--backdrop-color);
   pointer-events: none;
   z-index: 50;
   opacity: 0;
@@ -32,12 +32,12 @@ body.show-modal .modal {
   margin-left: auto;
   margin-bottom: 10px;
   svg {
-    fill: #935116;
+    fill: var(--accent-color);
   }
 }
 .modal {
   width: 270px;
-  background-color: #fff;
+  background-color: var(--white);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -98,11 +98,11 @@ body.show-modal .modal {
   width: 100%;
   font-size: 12px;
   padding: 5px 5px;
-  color: #212121;
-  border: 1px solid rgba(150, 93, 6, 0.2);
+  color: var(--text-color);
+  border: 1px solid var(--input-border);
   &:focus {
-    border-color: #935116;
-    outline: #935116;
+    border-color: var(--accent-color);
+    outline: var(--accent-color);
   }
   @include mobile {
     font-size: 14px;
@@ -123,12 +123,12 @@ body.show-modal .modal {
 
 .modal-btn {
   width: 90px;
-  background: #f1ebe7;
-  border: 1px solid#935116;
+  background: var(--btn-bg);
+  border: 1px solid var(--accent-color);
   font-size: 12px;
   line-height: 1.17;
   font-weight: 700;
-  color: #935116;
+  color: var(--accent-color);
   border-radius: 20px;
   padding: 5px;
   display: block;

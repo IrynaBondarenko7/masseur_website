@@ -1,14 +1,10 @@
 .hero {
-  background-color: #fbeee6;
+  background-color: var(--section-color);
 }
 .hero-container {
   background-image: url(../images/hero-img-mob.jpg);
   background-position: 118px 0px;
   background-repeat: no-repeat;
-
-  // @media screen and (min-width: 414px) and (max-width: 479px) {
-  //   background-position: 131px 0px;
-  // }
   @include mobile {
     background-position: 180px 0px;
   }
@@ -59,12 +55,10 @@
   }
 
   @include tablet {
-    // width: 40%;
     gap: 415px;
     align-items: start;
   }
   @include desktop {
-    // gap: 500px;
     width: 60%;
   }
 }
@@ -111,12 +105,12 @@
   }
 }
 .title-second-text {
-  color: #ffffff;
+  color: var(--white);
 
   @include desktop {
-    color: #222222;
+    color: var(--text-color);
   }
 }
 .title-text {
-  color: #ffffff;
+  color: var(--white);
 }
