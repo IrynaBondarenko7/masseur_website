@@ -30,3 +30,13 @@
   font-weight: 500;
   text-transform: uppercase;
 }
+.procedure-full-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 320px;
+  background-color: #fff;
+  padding: 40px 15px;
+}

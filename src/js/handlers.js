@@ -1,5 +1,6 @@
 import { localStorageKeys, sendContactData } from './form';
 import { onCloseModal, onModalOpen } from './modal';
+import { isShowProcedureDescription } from './procedures';
 import { refs } from './refs';
 
 export let formData =
@@ -35,4 +36,26 @@ export function onFormInput(evt) {
   formData[evt.target.name] = evt.target.value;
 
   localStorage.setItem(localStorageKeys.KEY, JSON.stringify(formData));
+}
+
+export function onDetailsBtnClick(evt) {
+  if (evt.target.nodeName !== 'BUTTON') {
+    return;
+  }
+  isShowProcedureDescription(
+    evt,
+    'detail-btn-1',
+    refs.procedureFullDescriptionFirst
+  );
+  isShowProcedureDescription(
+    evt,
+    'detail-btn-2',
+    refs.procedureFullDescriptionSecond
+  );
+
+  isShowProcedureDescription(
+    evt,
+    'detail-btn-3',
+    refs.procedureFullDescriptionThird
+  );
 }

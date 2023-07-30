@@ -9,6 +9,7 @@ import { onBackdropModalClick } from './js/modal';
 import { refs } from './js/refs';
 import { populateInputs } from './js/form';
 import { removeMenu, toggleMenu } from './js/mob-menu';
+import { onDetailsBtnClick } from './js/handlers';
 
 refs.modalOpenBtn.addEventListener('click', onOpenModalBtnClick);
 refs.modalCloseBtn.addEventListener('click', onCloSeModalButtonClick);
@@ -18,5 +19,6 @@ refs.form.addEventListener('input', throttle(onFormInput, 500));
 refs.openMenuBtn.addEventListener('click', toggleMenu);
 refs.closeMenuBtn.addEventListener('click', toggleMenu);
 refs.menuList.addEventListener('click', removeMenu);
+refs.proceduresList.addEventListener('click', onDetailsBtnClick);
 
 populateInputs();
