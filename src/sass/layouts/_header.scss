@@ -18,10 +18,10 @@
   display: none;
   @include tablet {
     display: flex;
-    gap: 65px;
+    gap: 52px;
   }
   @include desktop {
-    gap: 196px;
+    gap: 185px;
   }
 }
 .header-logo {

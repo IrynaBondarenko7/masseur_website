@@ -9,65 +9,125 @@
     flex-direction: row;
     align-items: center;
     gap: 30px;
+    padding-bottom: 30px;
+  }
+}
+.meterial-description {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-size: 13px;
+  @include mobile {
+    font-size: 18px;
+  }
+  @include tablet {
+    font-size: 20px;
+  }
+  @include desktop {
+    width: 450px;
+    font-size: 24px;
+    text-align: left;
+  }
+}
+.second-meterial-description {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-size: 13px;
+  padding-bottom: 30px;
+  @include mobile {
+    font-size: 18px;
+  }
+  @include tablet {
+    font-size: 20px;
+  }
+  @include desktop {
+    font-size: 24px;
+    text-align: left;
   }
 }
 .picture-wrapp {
   position: relative;
-  padding-bottom: 380px;
+  padding-bottom: 465px;
   width: 300px;
   margin: 0 auto;
   @include tablet {
     width: 738px;
-    padding-bottom: 800px;
+    padding-bottom: 900px;
   }
 
   @include desktop {
-    width: 1100px;
+    width: 900px;
+    padding-bottom: 1030px;
   }
 }
 .material-img {
   width: 150px;
   position: absolute;
   @include tablet {
-    width: 350px;
+    width: 300px;
   }
 }
 
 .m-first-img {
-  top: 10%;
-  left: 16%;
+  top: 0%;
+  left: 12%;
   z-index: 1;
   @include mobile {
-    left: 35%;
+    left: 20%;
   }
   @include tablet {
     left: 30%;
   }
 }
 .m-second-img {
-  top: 20%;
-  left: 45%;
+  top: 10%;
+  left: 49%;
   z-index: 2;
   @include mobile {
-    top: 20%;
-    left: 57%;
+    top: 16%;
+    left: 60%;
   }
   @include tablet {
-    top: 25%;
-    left: 52%;
+    top: 23%;
+    left: 59%;
+  }
+  @include desktop {
+    top: 20%;
   }
 }
 .m-third-img {
-  top: 38%;
-  left: 25%;
+  top: 42%;
+  left: 43%;
   z-index: 3;
+
+  @include mobile {
+    left: 23%;
+  }
+  @include tablet {
+    top: 45%;
+  }
+  @include desktop {
+    top: 40%;
+    left: 27%;
+  }
 }
 .m-fourth-img {
   top: 30%;
-  left: 3%;
+  left: 0%;
   z-index: 4;
 
+  @include mobile {
+    top: 25%;
+    left: -10%;
+  }
+
   @include tablet {
-    left: 2%;
+    left: 0%;
+    top: 20%;
+  }
+  @include desktop {
+    left: 3%;
+    top: 28%;
   }
 }

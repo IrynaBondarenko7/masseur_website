@@ -14,19 +14,25 @@
   text-align: center;
   display: block;
   margin: 0 auto;
-  font-size: 3vw;
+  font-size: 13px;
   @include mobile {
-    width: 350px;
     font-size: 18px;
   }
   @include tablet {
     font-size: 20px;
-    width: 450px;
   }
   @include desktop {
-    font-size: 25px;
+    width: 450px;
+    font-size: 24px;
   }
 }
 .about-img {
   margin: 0 auto;
+  width: 250px;
+  @include tablet {
+    width: 350px;
+  }
+  @include desktop {
+    width: 500px;
+  }
 }

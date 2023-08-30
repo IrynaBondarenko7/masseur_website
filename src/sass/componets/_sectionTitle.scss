@@ -10,6 +10,9 @@
     height: 1px;
     background-color: currentColor;
   }
+  @include desktop {
+    font-size: 23px;
+  }
 }
 .reverce-section-title {
   justify-content: end;
