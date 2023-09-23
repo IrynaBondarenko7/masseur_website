@@ -53,10 +53,4 @@ export function onDetailsBtnClick(evt) {
     'detail-btn-2',
     refs.procedureFullDescriptionSecond
   );
-
-  isShowProcedureDescription(
-    evt,
-    'detail-btn-3',
-    refs.procedureFullDescriptionThird
-  );
 }

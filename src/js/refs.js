@@ -18,11 +18,7 @@ export const refs = {
   procedureFullDescriptionSecond: document.querySelector(
     '#procedure-full-description-2'
   ),
-  procedureFullDescriptionThird: document.querySelector(
-    '#procedure-full-description-3'
-  ),
   detailBtnFifst: document.querySelector('#detail-btn-1'),
   detailBtnSecond: document.querySelector('#detail-btn-2'),
-  detailBtnThird: document.querySelector('#detail-btn-3'),
   btnUp: document.querySelector('.btn-up'),
 };

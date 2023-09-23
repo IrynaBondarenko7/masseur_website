@@ -52,6 +52,10 @@
     background-color: var(--white);
     color: var(--detail-btn-hover-color);
   }
+  @include desktop {
+    font-size: 24px;
+    padding: 10px 20px;
+  }
 }
 .btn-up {
   display: none;
