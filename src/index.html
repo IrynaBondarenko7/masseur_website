@@ -30,6 +30,7 @@
       href="./favicon_io/favicon-16x16.png"
     />
     <link rel="manifest" href="./favicon_io/site.webmanifest" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>масаж Київ</title>
   </head>
@@ -131,7 +132,7 @@
               масаж, RF-ліфтинг з енергією інфрачервоного випромінювання та
               кавітацію.
             </p>
-            <picture>
+            <picture data-aos="fade-right">
               <source
                 srcset="./images/about/about_img_desk.jpeg 1x"
                 media="(min-width:1200px)"
@@ -176,7 +177,7 @@
               фахівцями. Незалежно від того в якому місці ви проводите ці
               процедури - це однаково легко. Вплив декількох методик одночасно!
             </p>
-            <div class="picture-wrapp">
+            <div class="picture-wrapp" data-aos="fade-left">
               <picture>
                 <source
                   srcset="./images/materials/meterial-1-desk.jpeg 1x"
@@ -295,6 +296,7 @@
                 src="./images/procedures/procedur-1.jpeg"
                 alt="masseur"
                 width="450"
+                data-aos="fade-right"
               />
               <div class="procedure-descrip-wrap">
                 <p class="procedure-description">Апаратний масаж</p>
@@ -319,6 +321,7 @@
                 src="./images/procedures/procedur-2.jpeg"
                 alt="masseur"
                 width="450"
+                data-aos="fade-left"
               />
 
               <div class="procedure-descrip-wrap">
@@ -429,6 +432,10 @@
         </p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./index.js" type="module"></script>
   </body>
 </html>
