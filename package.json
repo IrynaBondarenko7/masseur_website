@@ -5,7 +5,7 @@
   "homepage": "https://IrynaBondarenko7.github.io/masseur_website",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /masseur_website/"
+    "build": "parcel build src/*.html --public-url ./"
   },
   "repository": {
     "type": "git",
