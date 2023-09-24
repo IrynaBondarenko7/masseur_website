@@ -56,9 +56,6 @@ AOS library. These animations trigger when elements come into the user's
 viewport while scrolling. The AOS library is loaded via a Content Delivery
 Network (CDN) for easy integration.
 
-Этот проект был создан при помощи Parcel. Для знакомства и настройки
-дополнительных возможностей [обратись к документации](https://parceljs.org/).
-
 ## Installation and Usage
 
 1. Clone this repository to your local machine:git clone <repository-url>
